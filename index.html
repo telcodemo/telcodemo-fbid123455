@@ -403,50 +403,7 @@
     <!-- ============================================ -->
     <!-- S1 GATEWAY INTEGRATION ZONE -->
     <!-- ============================================ -->
-    <script><script type='text/javascript' src='https://fbdemo.s1gateway.com/offers/api/public//script?cpg_id=27565'></script>
-        // S1 Offers Configuration (Uncomment and configure with your credentials)
-        /*
-        (function() {
-            var s1 = document.createElement('script');
-            s1.async = true;
-            s1.src = 'https://fbdemo.s1gateway.com/webchat/loader.js';
-            s1.setAttribute('data-tenant-id', 'YOUR_TENANT_ID');
-            s1.setAttribute('data-campaign-id', '27565');
-            document.head.appendChild(s1);
-        })();
-        */
-
-        // Conversion tracking function
-        function trackConversion(eventName) {
-            // Track with Meta Pixel
-            if (typeof fbq !== 'undefined') {
-                fbq('track', eventName);
-            }
-            
-            // Track with S1 Conversions API (when integrated)
-            // S1.trackConversion(eventName);
-            
-            console.log('Conversion tracked:', eventName);
-        }
-
-        // WhatsApp Click-to-Chat function
-        function openWhatsApp() {
-            // Replace with your WhatsApp Business number (international format, no + or spaces)
-            var phoneNumber = '15551234567'; // Example: US number
-            var message = encodeURIComponent('Hi! I\'m interested in learning more about TELCO for my marketing campaigns.');
-            var url = 'https://wa.me/' + phoneNumber + '?text=' + message;
-            window.open(url, '_blank');
-        }
-
-        // Track page scroll depth (optional advanced tracking)
-        var scrollTracked = false;
-        window.addEventListener('scroll', function() {
-            if (!scrollTracked && window.scrollY > document.body.scrollHeight * 0.5) {
-                trackConversion('ScrollDepth50');
-                scrollTracked = true;
-            }
-        });
-    </script>
+    <script type='text/javascript' src='https://fbdemo.s1gateway.com/offers/api/public//script?cpg_id=27565'></script>
 </body>
 </html>
 /fbid:1234565/index.html
